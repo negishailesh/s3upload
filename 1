@@ -1,0 +1,9 @@
+import xlrd
+
+
+loc = ("/Users/negi/Downloads/ISO10383_MIC.xls")
+
+wb = xlrd.open_workbook(loc)
+sheet = wb.sheet_by_index(0)
+print sheet.__dict__()
+
